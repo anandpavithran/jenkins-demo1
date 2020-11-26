@@ -4,10 +4,10 @@ metadata:
   name: "simple-pipeline"
 spec:
   source:
-    contextDir: simple-pipeline
+    #contextDir: simple-pipeline
     git:
-      uri: "https://github.com/anandpavithran/DO288-apps"
-      ref: "simple-pipeline"
+      uri: "https://github.com/anandpavithran/jenkins-demo1"
+      #ref: "simple-pipeline"
   strategy:
     jenkinsPipelineStrategy:
       type: JenkinsPipeline

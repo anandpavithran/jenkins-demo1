@@ -40,6 +40,8 @@ pipeline {
         stage('stage 3') {
             steps {
                 sh 'echo hello from stage 3!. This is the last stage...'
+                sh 'oc project test600'
+                sh 'oc new-app --name test6 --as-deployment-config --docker-image=quay.io/anandpavithran/infosys:1.0'
             }
         }
 
